@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    background: #f2f2f2;
+} 
+
+/*-------------------------------------------*/
+/*----------------   MENU  ------------------*/
+/*-------------------------------------------*/
+.cabezalPagina{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+/*menu cuando cambia la resolución*/
+.sticky{
+    background: linear-gradient(to top, #30d0d05f 0%, #3308676d 100%);
+    padding: 5px 100px;    
+}
+
+/*LOGO armonia y bienestar en el menu*/
+.cabezalPagina .logo{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cabezalPagina .menuNavegacion{
+    position: relative;
+    display: flex;
+}
+
+
+
+.cabezalPagina .menuNavegacion .enlaces{    
+    position: relative;
+    list-style: none;
+}
+
+
+.cabezalPagina .menuNavegacion .enlaces a{    
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+/*-------------------------------------------*/
+/*----------------  CABEZAL  ----------------*/
+/*-------------------------------------------*/
+.banner{
+    padding: 100px;
+
+}
+
+/*el cabezal*/
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.282) 0%, rgba(251, 194, 235, 0.22) 100%) ,url("../img/woman5.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/*texto verónica martinez*/
+.banner .presentacionBanner{
+    font-size: 80px;
+    color: #faaca8;
+    font-weight: 700;
+    line-height: 1.5em;
+    
+}
+
+/*texto profesional de la estetica*/
+.banner .profesionalBanner{
+    font-size: 50px;
+    color: #faaca8;
+    font-weight: 500;
+}
+
+
+/*-------------------------------------------*/
+/*----------------  OLA  --------------------*/
+/*-------------------------------------------*/
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+/*-------------------------------------------*/
+/*--------------     MAIN     ---------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*--------------  CONTENEDOR  ---------------*/
+/*-------------------------------------------*/
+.contenedor{
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.282) 0%, rgba(251, 194, 235, 0.22) 100%);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+/*-------------------------------------------*/
+/*--------  TITULO DE CADA SECCIÓN ----------*/
+/*-------------------------------------------*/
+
+.titulo-seccion{
+
+    text-align: center;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #7c79a0;
+
+    padding-bottom: 30px;
+    
+}
+/*-------------------------------------------*/
+/*-----  CONTENEDOR TERAPIAS Y SERVICIOS ----*/
+/*-------------------------------------------*/
+
+.main-servicios{
+    border-radius: 10px;  
+}
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicios{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+}
+
+.servicio{
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.nombre-servicio{
+    font-size: 25px;
+    color: #7c79a0;
+    margin-bottom: 5px;
+}
+
+.imagen-servicio{
+   width: 90%;
+   height: 250px;
+   margin: 0 20px;
+   border-radius: 15px;
+  
+}
+
+.imagen-ganadoraSorteo{
+   width: 100%;
+   height: 500px;
+   margin: auto;
+   border-radius: 15px;
+}
+
+.imagen-testimonio{
+   width: 100%;
+   height: 150px;
+   margin: auto;
+   border-radius: 15px; 
+}
+
+.texto-servicio{
+   font-size: 15px;
+   text-align: justify;
+   
+}
+/*-------------------------------------------*/
+/*-----------  CONTENEDOR OFERTAS -----------*/
+/*-------------------------------------------*/
+
+.tabla-precio_individual{
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.precio{      
+    width: 30% auto;
+    text-align: center;
+    background: #b497f4;
+    height: 450px;
+    border-radius: 10px;
+    padding: 30px 10px;
+    color: #fff;
+    margin: 0 35px;
+}
+
+.precio-cuponera{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+
+.beneficio{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 5px;   
+}
+
+.activa{
+    background: #a7c2e9;
+    transform: scale(1.1);
+}
+
+.cta{
+    background: #fff;
+    color: #7c79a0;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.cta:hover{
+    width: 50%;
+    background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    color: #fff;
+    padding: 10 10px;
+}
+
+.cta2{
+    border-radius: 25px;
+    margin: 10px auto;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.83) 0%, rgba(251, 194, 235, 0.809) 100%);
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    padding: 25px 0;
+    color: blue;
+    font-weight: 500;
+}
+
+.cta2:hover{
+    width: 40%;
+    background: #faaca8;
+    padding: 10 10px;
+    font-size: 20px;
+    color: #330867;
+}
+
+.boton-consulta-terapias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------*/
+/*---------  RESULTADOS OBTENIDOS -----------*/
+/*-------------------------------------------*/
+
+.main-resultados{ 
+    border-radius: 10px;
+}
+
+.sugerenciaEspecialista{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: crimson;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.796) 0%, rgba(251, 194, 235, 0.652) 100%);
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+} 
+/*-------------------------------------------*/
+/*-----------  GALERIA DE FOTOS -------------*/
+/*-------------------------------------------*/
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.galeria-contenedor{
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-galeria{
+    width: 23%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.imagen-individual{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*-------------------------------------------*/
+/*------  GALERIA DE TESTIMONIOS  -----------*/
+/*-------------------------------------------*/
+
+ .galeria-testimonios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonios{
+  
+   border-radius: 10px;
+   padding-top: 15px;
+   
+}
+.testimonio{
+   width: 40%;
+   padding: 10px 10px;
+   border-radius: 10px;
+   height: auto;
+   margin: auto;
+}
+
+.testimonio-instagram{
+   width: 70%;
+   margin: auto;
+}
+
+/*-------------------------------------------*/
+/*--------------  PIE PÁGINA  ---------------*/
+/*-------------------------------------------*/
+
+.pie-pagina{
+    position: relative;
+    text-align: center;
+}
+
+.pie-pagina .wave__pie{
+   top: 0;
+   left: 0;
+   
+}
+
+.contacto{
+
+    padding-top: 0px;
+}
+
+.titulo-seccion__contacto{
+    color:rebeccapurple;   
+}
+
+.pie-pagina .botonContacto{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.83) 0%, rgba(251, 194, 235, 0.809) 100%);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.pie-pagina .botonContacto a{
+    text-decoration: none;
+    
+}
+
+.botonContacto:hover{
+    width: 250px;
+}
+
+
+.iconoContacto{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.iconoContacto i{
+    font-size: 25px;
+    line-height: 60px;
+    color: blue;
+}
+
+
+.jadmAnalista{
+    margin-top: 15px;
+    height: 170px;
+    background: black;
+    color: #fff;
+    padding: 20px;
+}
+
+.desarrollador{
+    position: relative;
+    padding: 15px 0;
+    
+}
+
+.desarrollador__nombre{
+    color: gray;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+
+/*-------------------------------------------*/
+/*--------------  DESARROLLADOR  ------------*/
+/*-------------------------------------------*/
+
+.jadmAnalista__boton{
+    display: inline-block;
+    height: 10px;
+    width: 30px;
+    padding-bottom: 53px;
+    overflow: hidden;
+    background: gray;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.jadmAnalista__boton a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.jadmAnalista__boton:hover{
+    width: 130px;
+}
+
+.jadmAnalista__iconoContacto{
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.jadmAnalista__iconoContacto i{
+    font-size: 20px;
+    color: black;
+    line-height: 60px;
+}
+
+
+
+@media screen and (max-width:750px){
+    .logo{
+        display: none;
+    }
+    .cabezalPagina .menuNavegacion .enlaces a{    
+        font-size: 12px;
+    }
+    .banner{
+        padding: 20px;
+    }
+    .banner .presentacionBanner{
+        font-size: 3em;
+        margin-top: 120px;
+    }
+
+    .banner .profesionalBanner{
+        font-size: 1.5em;
+    }
+    .menu-nav__enlace{
+        text-align: left;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .hero{
+        padding-top: 180px;   
+    }
+    .titulo-pagina{
+        font-size: 45px;
+        margin-top: 80px;
+    }
+    .copy{
+        font-size: 22px;
+    }   
+    .titulo-seccion{
+        font-size: 28px;
+    }
+    .titulo-pagina{
+        font-size: 45px;
+    }
+    .imagen-galeria{
+        width: 47%;
+    }
+    .nombre-servicio{
+        font-size: 20px;
+    }
+    .tabla-precio_individual{
+        height: auto;  
+    }
+    .precio{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .cta2{
+        margin: 20px auto;
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px){
+    
+    
+    .cabezalPagina{
+        margin-top: 5px;
+        padding: 20px 0;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .sugerenciaEspecialista{
+        font-size: 15px;
+    }
+    .cabezalPagina .menuNavegacion .enlaces a{    
+        display: inline-block;
+        color: #fff;
+        font-size: 9px;
+    }
+    .contenedor{
+        width: 93%;
+    }
+    .contenedor-servicios{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imagen-servicio{
+        width: 100%;
+        height: 150px;
+        margin: auto;
+    }
+    .imagen-ganadoraSorteo{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        border-radius: 15px;
+     }
+     .imagen-testimonio{
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        border-radius: 15px; 
+     }
+    .texto-servicio{
+        text-align: left;
+        font-size: 17px;
+    }
+    .titulo-pagina{
+        font-size: 35px;
+    }
+    .galeria-contenedor{
+        width: 100%;
+    }
+    .precio{
+        width: 90%;
+    }
+    .cta2{
+        margin: 20px auto;
+        width: 70%;
+    }
+}
+
