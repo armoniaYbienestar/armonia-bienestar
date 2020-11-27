@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,98 +11,203 @@ html{
     background: #f2f2f2;
 } 
 
-/*-------------------------------------------*/
-/*----------------   MENU  ------------------*/
-/*-------------------------------------------*/
-.cabezalPagina{
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.menu-navegacion
+{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 100px;
-    z-index: 1000;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.sticky
+{
+    padding: 20px 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    opacity: 0.8;
+}
+
+.menu-navegacion .max-width
+{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    transition: 0.5s;
-    
+    justify-content: space-between;
 }
 
-/*menu cuando cambia la resolución*/
-.sticky{
-    background: linear-gradient(to top, #30d0d05f 0%, #3308676d 100%);
-    padding: 5px 100px;    
-}
-
-/*LOGO armonia y bienestar en el menu*/
-.cabezalPagina .logo{
+.logo .texto-logo
+{
     color: #fff;
-    font-size: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
 }
 
-.cabezalPagina .menuNavegacion{
-    position: relative;
-    display: flex;
+.menu-navegacion .logo span
+{
+    color: #fff;
 }
 
+.sticky .logo span
+{
+    color: #fff; 
+    transition: all 0.5s ease;
+}
 
+.menu-navegacion .logo a
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+   
+}
 
-.cabezalPagina .menuNavegacion .enlaces{    
-    position: relative;
+.menu-navegacion .menu-navegacion__menu li
+{
     list-style: none;
-}
-
-
-.cabezalPagina .menuNavegacion .enlaces a{    
-    position: relative;
     display: inline-block;
-    margin: 0 5px;
+}
+
+.menu-navegacion a
+{
     color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-
-/*-------------------------------------------*/
-/*----------------  CABEZAL  ----------------*/
-/*-------------------------------------------*/
-.banner{
-    padding: 100px;
-
-}
-
-/*el cabezal*/
-.banner{
-    position: relative;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgba(161, 140, 209, 0.282) 0%, rgba(251, 194, 235, 0.22) 100%) ,url("../img/woman5.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-/*texto verónica martinez*/
-.banner .presentacionBanner{
-    font-size: 80px;
-    color: #faaca8;
-    font-weight: 700;
-    line-height: 1.5em;
-    
-}
-
-/*texto profesional de la estetica*/
-.banner .profesionalBanner{
-    font-size: 50px;
-    color: #faaca8;
+    font-size: 18px;
     font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    
+}
+
+.menu-navegacion .enlace:hover
+{
+    color: #faaca8;
+}
+
+.menu-navegacion__boton
+{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.sticky a:hover
+{
+    color: #faaca8;
+}
+
+.banner
+{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.banner .max-width
+{
+    margin: auto 0 auto 40px;
+}
+
+.banner .banner__presentacion 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.banner .banner__presentacion img 
+{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    object-position: center top;
+    border: 2px solid;
+}
+
+.banner .banner__presentacion-nombre 
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.banner  .banner__presentacion-detalle 
+{
+    font-size: 40px;
+    margin: 25px 0;
+    color: #6a11cb;
+}
+
+.botones_redes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner__boton{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.banner__boton a
+{
+    text-decoration: none;
+    text-align: center;
+}
+
+.banner__boton:hover
+{
+    width: 230px;
+}
+
+.banner__boton-icono
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;  
+}
+
+.banner__boton-icono i
+{
+    font-size: 30px;    
+}
+
+.btn-wapp a
+{
+    color: #00bb2d;
+}
+
+.btn-inst a
+{
+    color:  crimson;
 }
 
 
@@ -112,7 +219,7 @@ html{
     bottom: 0;
     left: 0;
     width: 100%;
-    
+
 }
 /*-------------------------------------------*/
 /*--------------     MAIN     ---------------*/
@@ -120,6 +227,57 @@ html{
 /*-------------------------------------------*/
 /*--------------  CONTENEDOR  ---------------*/
 /*-------------------------------------------*/
+
+.sobre-mi
+{ 
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.sobre-mi .sobre-mi__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-mi .sobre-mi__contenido-left
+{
+    width: 45%;
+}
+
+.sobre-mi .sobre-mi__contenido-left .sobre-mi__imagen
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 6px;
+}
+
+.sobre-mi .sobre-mi__contenido-right
+{
+    width: 55%;
+}
+
+.sobre-mi .sobre-mi__contenido-right .sobre-mi__texto
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sobre-mi .sobre-mi__contenido-right p
+{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
 .contenedor{
     background: linear-gradient(to top, rgba(161, 140, 209, 0.282) 0%, rgba(251, 194, 235, 0.22) 100%);
     width: 90%;
@@ -498,34 +656,117 @@ html{
     line-height: 60px;
 }
 
+@media (max-width:1300px)
+{
+    .menu-navegacion .max-width
+    {
+       margin-left: 0;    
+    } 
+}
+
+@media (max-width:1104px)
+{
+    .sobre-mi .sobre-mi__contenido-left .sobre-mi__imagen
+    {
+        width: 300px;
+        height: 300px;
+        border-radius: 6px;
+    }
+}
 
 
+
+@media (max-width:991px)
+{
+    .max-width
+    {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:947px)
+{
+    /*menu hamburguesa*/
+    .menu-navegacion__boton
+    {
+        display: block;
+        
+        z-index: 999;
+    }
+
+    .menu-navegacion__boton i.active:before
+    {
+        content: "\f00d";
+
+    }
+
+    .menu-navegacion .menu-navegacion__menu
+    {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-navegacion .menu-navegacion__menu.active
+    {
+        left: -0;
+    }
+   
+    .menu-navegacion .menu-navegacion__menu li
+    {
+        display: block;
+        
+    }
+
+    .menu-navegacion a
+    {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;  
+    }
+
+    .banner .banner__texto .banner__presentacion-nombre 
+    {
+        font-size: 70px;
+        
+    }
+
+    .banner .banner__texto .banner__presentacion-detalle 
+    {
+        font-size: 35px;
+    }   
+
+    .max-width
+    {
+        max-width: 800px;
+    }
+    .sobre-mi__contenido{
+        width: 100%;
+    }
+    
+    .sobre-mi__texto
+    {
+        text-align: center;
+    }
+
+    .sobre-mi__contenido-left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .sobre-mi__contenido-right{
+        flex: 100%;
+    }
+}
 @media screen and (max-width:750px){
-    .logo{
-        display: none;
-    }
-    .cabezalPagina .menuNavegacion .enlaces a{    
-        font-size: 12px;
-    }
-    .banner{
-        padding: 20px;
-    }
-    .banner .presentacionBanner{
-        font-size: 3em;
-        margin-top: 120px;
-    }
-
-    .banner .profesionalBanner{
-        font-size: 1.5em;
-    }
-    .menu-nav__enlace{
-        text-align: left;
-        font-size: 15px;
-        margin-right: 5px;
-    }
-    .hero{
-        padding-top: 180px;   
-    }
+  
     .titulo-pagina{
         font-size: 45px;
         margin-top: 80px;
@@ -557,23 +798,62 @@ html{
         width: 70%;
     }
 }
-@media screen and (max-width:500px){
-    
-    
-    .cabezalPagina{
-        margin-top: 5px;
-        padding: 20px 0;
-        width: 100%;
-        border-radius: 20px;
+
+@media (max-width:690px)
+{
+    .max-width
+    {
+        padding: 0 23px;
     }
+    .banner .banner__texto .banner__presentacion-nombre 
+    {
+        font-size: 60px;
+        
+    }
+
+    .banner .banner__texto .banner__presentacion-detalle 
+    {
+        font-size: 32px;
+    } 
+}
+
+@media screen and (max-width:500px){  
+    
+    .banner .max-width
+    {
+        margin: auto;       
+    }
+
+    .banner__texto
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .banner .banner__presentacion img 
+    {
+        margin-top: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .banner .banner__texto .banner__presentacion-nombre 
+    {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .banner .banner__texto .banner__presentacion-detalle 
+    {
+        font-size: 15px;
+    }   
+
     .sugerenciaEspecialista{
         font-size: 15px;
     }
-    .cabezalPagina .menuNavegacion .enlaces a{    
-        display: inline-block;
-        color: #fff;
-        font-size: 9px;
-    }
+   
     .contenedor{
         width: 93%;
     }
