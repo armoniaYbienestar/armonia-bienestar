@@ -23,16 +23,20 @@ html{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 20px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.5s ease;
 }
 
+
+
 .sticky
 {
-    padding: 20px 0;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    opacity: 0.8;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);   
+}
+
+.menu-navegacion-menu__ocultar
+{
+    transform: translate(0);
 }
 
 .menu-navegacion .max-width
@@ -62,8 +66,7 @@ html{
 {
     color: #fff;
     font-size: 25px;
-    font-weight: 600;
-   
+    font-weight: 600; 
 }
 
 .menu-navegacion .menu-navegacion__menu li
@@ -210,6 +213,10 @@ html{
     color:  crimson;
 }
 
+header
+{
+  position: relative;  
+}
 
 /*-------------------------------------------*/
 /*----------------  OLA  --------------------*/
@@ -362,7 +369,6 @@ html{
 .texto-servicio{
    font-size: 15px;
    text-align: justify;
-   
 }
 /*-------------------------------------------*/
 /*-----------  CONTENEDOR OFERTAS -----------*/
@@ -694,7 +700,7 @@ html{
         z-index: 999;
     }
 
-    .menu-navegacion__boton i.active:before
+    .hamburguesa.active:before
     {
         content: "\f00d";
 
@@ -716,6 +722,11 @@ html{
     .menu-navegacion .menu-navegacion__menu.active
     {
         left: -0;
+    }
+
+    .menu-navegacion .menu-navegacion-menu__ocultar
+    {
+        right: -0;
     }
    
     .menu-navegacion .menu-navegacion__menu li
@@ -803,25 +814,35 @@ html{
 {
     .max-width
     {
-        padding: 0 23px;
+        
+        margin: auto;
     }
+
     .banner .banner__texto .banner__presentacion-nombre 
     {
-        font-size: 60px;
+        font-size: 50px;
         
     }
 
     .banner .banner__texto .banner__presentacion-detalle 
     {
-        font-size: 32px;
+        font-size: 28px;
     } 
 }
 
 @media screen and (max-width:500px){  
-    
     .banner .max-width
     {
         margin: auto;       
+    }
+    .menu-navegacion .logo a
+    {
+        font-size: 18px; 
+    }
+
+    .menu-navegacion__boton
+    {
+        font-size: 18px;   
     }
 
     .banner__texto
@@ -848,7 +869,8 @@ html{
     .banner .banner__texto .banner__presentacion-detalle 
     {
         font-size: 15px;
-    }   
+    } 
+      
 
     .sugerenciaEspecialista{
         font-size: 15px;
